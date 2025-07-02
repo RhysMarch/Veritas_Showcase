@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Misinformation Detection Showcase</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="icon" type="image/png" href="src/assets/images/misinfo_logo.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="title-container">
+  <div class="title-text">
+    <h1>Veritas</h1>
+    <p>A smart and scalable platform for detecting fake news using machine learning and blockchain.</p>
+  </div>
+</header>
+
+<div id="main">
+  <section id="section1" class="content-section">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/2730Zfwx-ws?si=WFCIHmqFUBikczp9&amp" title="Demo Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <hr class="divisor">
+
+  <section id="section2" class="content-section">
+    <div class="sub-section">
+      <h1>About the Project</h1>
+      <p>
+        Veritas is a Misinformation Detection Application created using <i><b>Django</b></i>, <i><b>Machine Learning</b></i>, and <i><b>Blockchain</b></i> to verify the authenticity of online content.
+        The project was developed as part of a University Group Project.
+        <br><br>
+        <b>Key Features:</b>
+      <ul>
+        <li><b>Fake News Detection</b> – Uses a trained machine learning model (Logistic Regression) to classify news as real or fake.</li>
+        <li><b>User Authentication</b> – Secure login and registration using Google OAuth.</li>
+        <li><b>Blockchain Logging</b> – Hashes and stores classification results in a blockchain for verification.</li>
+        <li><b>Scalable Deployment</b> – Multi-container setup using Docker Compose with PostgreSQL, Gunicorn, and Nginx.</li>
+      </ul>
+      </p>
+      <div class="image-gallery-section">
+        <div class="image-grid">
+          <img src="src/assets/images/Veritas1.png" alt="Veritas Screenshot 1">
+          <img src="src/assets/images/Veritas2.png" alt="Veritas Screenshot 2">
+          <img src="src/assets/images/Veritas3.png" alt="Veritas Screenshot 3">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divisor">
+
+  <section id="section3" class="content-section">
+    <div class="sub-section">
+      <h1>My Contributions</h1>
+      <p>
+        <b>Deployment and Scalability</b>
+        <br><br>
+        I built the Docker-based infrastructure for development and deployment. This included:
+      <ul>
+        <li>Creating a multi-service setup using <b>Docker Compose</b>.</li>
+        <li>Configuring <b>Gunicorn</b> as the production-ready WSGI server to run Django.</li>
+        <li>Integrating <b>Nginx</b> to route HTTP/HTTPS traffic and serve static content efficiently.</li>
+        <li>Connecting and managing a <b>PostgreSQL</b> container as the main database backend.</li>
+      </ul>
+      </p>
+      <p>
+        Docker Compose defined and ran isolated containers for each service, ensuring consistency across environments. PostgreSQL stored user data. Gunicorn served the Django backend with multiple workers to handle concurrent requests. Nginx acted as a reverse proxy, routing traffic to Gunicorn, handling SSL, and serving static files. Together, these tools formed a reliable, secure, and scalable deployment architecture.
+      </p>
+      <br>
+      <p>
+        <b>User Authentication</b>
+        <br><br>
+        I was also responsible for implementing secure <b>user authentication</b>, integrating the Google OAuth Api to allow access to our tool only if you have a valid Google account.
+      </p>
+    </div>
+    <br>
+    <div class="sub-section">
+      <div class="icons-section">
+        <div class="icon-container"><img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-icon.svg" alt="Django Icon" class="icon"></div>
+        <div class="icon-container"><img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker Icon" class="icon"></div>
+        <div class="icon-container"><img src="https://cdn.worldvectorlogo.com/logos/nginx-1.svg" alt="Nginx Icon" class="icon"></div>
+        <div class="icon-container"><img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="PostgreSQL Icon" class="icon"></div>
+        <div class="icon-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon" class="icon"></div>
+        <div class="icon-container"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Icon" class="icon"></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divisor">
+</div>
+
+<script src="src/js/main.js"></script>
+</body>
+</html>
